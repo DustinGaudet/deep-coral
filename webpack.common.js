@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Production',
+      title: 'Deep Coral',
       template: path.resolve(__dirname, 'src/index.html')
     }),
     new MiniCssExtractPlugin({
