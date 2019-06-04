@@ -16,7 +16,8 @@
     "lodash": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -25,6 +26,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-es2015-computed-properties": "^6.24.1",
     "clean-webpack-plugin": "^2.0.2",
     "css-loader": "^2.1.1",
     "csv-loader": "^3.0.2",

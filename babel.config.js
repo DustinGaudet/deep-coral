@@ -19,5 +19,6 @@ module.exports = {
     ],
     plugins: [
       '@babel/plugin-proposal-class-properties',
+      // 'transform-es2015-computed-properties'
     ]
   };

@@ -1,0 +1,29 @@
+{
+  "user": {
+    "name": "John Smith",
+    "email": "john.smith@gmail.com",
+    "profilePicture": "https://example.com/img-url.jpg"
+  },
+  "tasks": {
+    "1559682072200": {
+      "name": "Cool Project 1",
+      "id": "1559682072200"
+    },
+    "1559682072393": {
+      "name": "Cool Project 2",
+      "id": "1559682072393"
+    },
+    "1559682072412": {
+      "name": "Cool Project 3",
+      "id": "1559682072412"
+    }
+  },
+  "taskOrder": {
+    "root": [
+      "2019-06-01-a8b02624",
+      "2019-06-02-c8b94323",
+      "2019-06-04-e8b89425"
+    ]
+  },
+  "activeTaskId": "2019-06-01-a8b02624"
+}
