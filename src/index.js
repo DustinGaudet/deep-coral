@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ExampleComponent from './components/ExampleComponent'
+import App from './components/App'
 
 const app = document.getElementById('app')
 
 ReactDOM.render(
-  <ExampleComponent myProp="functional" />,
+  <App />,
   app
 )
