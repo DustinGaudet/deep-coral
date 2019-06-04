@@ -1,7 +1,7 @@
-import _ from 'lodash'
+import {values, mapValues} from 'lodash'
 
-export const toArrayWithKey = (obj, keyAs) => _.values(
-  _.mapValues(obj, (value, key) => { 
+export const toArrayWithKey = (obj, keyAs) => values(
+  mapValues(obj, (value, key) => { 
     value[keyAs] = key; return value; 
   })
 );
