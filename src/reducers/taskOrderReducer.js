@@ -11,9 +11,8 @@ export default (state = {...initialState.taskOrder}, action) => {
         [action.payload.id]: action.payload.orderedTasklist
       }
     case 'DELETE_ORDERED_TASKLIST':
-      return {
-        ...values(state).filter(x => x.id !== action.payload.id)
-      }
+      const {[action.payload.id]: discard, ...newState} = state
+      return newState
     default: 
       return state
   }

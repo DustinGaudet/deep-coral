@@ -1,17 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {Provider} from 'react-redux'
 import App from './components/App'
-import store from './store'
+import configureStore from './store'
 
-const fancyLog = () => { 
-  console.log("%c Rendered with 👉 👉👇", "background: purple; color: #FFF");  
-  console.log(store.getState());
-}
-const app = document.getElementById('app')
+const store = configureStore()
+
+const jsx = (
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
 
 const render = () => {
-  fancyLog()
-  ReactDOM.render( <App />, app )
+  ReactDOM.render( jsx, document.getElementById('app') )
 }
 
 render()

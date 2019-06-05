@@ -12,9 +12,8 @@ export default (state = {...initialState.tasks}, action) => {
         }
       }
     case 'DELETE_TASK':
-      return {
-        ...values(state).filter(x => x.id !== action.payload.id)
-      }
+      const {[action.payload.id]: discard, ...newState} = state
+      return newState
     default: 
       return state
   }
